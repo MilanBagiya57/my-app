@@ -14,7 +14,7 @@ const Accordion = () => {
             <div className=" rounded p-2 pb-2 ">
               <div className="relative h-[45px]">
                 <div
-                  className={`container mx-auto max-w-[1237px] px-5 h-[48px] flex justify-between items-center relative ${
+                  className={`container mx-auto max-w-[1237px] wrapper px-5 h-[48px] flex justify-between items-center relative ${
                     open && id === index ? 'Slider-text-wraper' : ''
                   } `}
                   onClick={() => {

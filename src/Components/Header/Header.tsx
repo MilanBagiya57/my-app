@@ -23,7 +23,7 @@ const Header = () => {
             </h5>
           </div>
 
-          <div className="text-white hidden md:block">
+          <div className="text-white lg:hidden md:hidden md:block">
             <ul className="flex flex-row justify-start items-center gap-5 text-[1rem]">
               <li>
                 <Link href="#">Home</Link>
