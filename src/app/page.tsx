@@ -1,113 +1,379 @@
-import Image from 'next/image'
+import Header from "@/Components/Header/Header";
+import Image from "next/image";
+import frame1 from "../../public/Assets/Images/Frame1.png";
+import icon from "../../public/Assets/Images/Icon.png";
+import icon1 from "../../public/Assets/Images/Icon1.png";
+import icon2 from "../../public/Assets/Images/Icon2.png";
+import icon3 from "../../public/Assets/Images/Icon3.png";
+import icon4 from "../../public/Assets/Images/Icon4.png";
+import frame2 from "../../public/Assets/Images/Frame2.png";
+import icon5 from "../../public/Assets/Images/Icon5.png";
+import frame3 from "../../public/Assets/Images/frame3.png";
+import icon6 from "../../public/Assets/Images/Icon6.png";
+import icon7 from "../../public/Assets/Images/Icon7.png";
+import icon8 from "../../public/Assets/Images/Icon8.png";
+import frame5 from "../../public/Assets/Images/Frame5.png";
+import SlideText from "@/Components/SlideText/SlideText";
+import Accordion from "@/Components/Accordion/Accordion";
+
+// interface item_type {
+//   que: "string",
+//   ans: "string",
+// }
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">src/app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+    <>
+    <main>
+      <Header />
+
+      <section className="text-white pt-24 max-w-[1250px] px-5 mx-auto">
+        {/* <--------------first Part-----------> */}
+        <section>
+          <div>
+            <h1 className="text-4xl lg:text-[7.5rem]">LOREM IPSUM</h1>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:gap-8 mt-16">
+              <div className="md:my-0 my-8">
+                <h1 className="font-bold text-[1.5rem] leading-[0.8rem] text-white mb-3">
+                  DOLER SIT
+                </h1>
+                <p className="leading-8 text-[#FFFFFF] opacity-70">
+                  Lorem ipsum dolor sit amet consectetur. In nibh nam vel lacus
+                  sit. Neque venenatis mattis est nibh sed quis vel quis eu. In
+                  tincidunt faucibus aliquet quis sed sed. Phasellus non at
+                  lacus convallis elementum. Suspendisse tincidunt congue sem
+                  turpis. Nulla eu lorem cras leo.
+                </p>
+                <div className="mt-5">
+                  <Image
+                    src={icon}
+                    loading="lazy"
+                    decoding="async"
+                    data-nimg="1"
+                    width={20}
+                    height={20}
+                    alt="Picture of Logo"
+                    className="mr-2"
+                    style={{ color: "transparent" }}
+                  />
+                </div>
+              </div>
+              <div className="md:my-0 my-8">
+                <h1 className="font-bold text-[1.5rem] leading-[0.8rem] text-white mb-3">
+                  LOREM IPSUM DOLOR SIT
+                </h1>
+                <p className="leading-8 text-[#FFFFFF] opacity-70">
+                  Dolor adipiscing condimentum aliquam nullam mauris ante ipsum
+                  vel nisl. Dignissim molestie amet purus felis egestas amet
+                  eget. Viverra malesuada ultricies nunc vel diam posuere mauris
+                  sociis maecenas. Aenean dui et nec ultrices libero lacus.
+                </p>
+                <div className="mt-5">
+                  <Image
+                    src={icon1}
+                    loading="lazy"
+                    decoding="async"
+                    data-nimg="1"
+                    width={20}
+                    height={20}
+                    alt="Picture of Logo"
+                    className="mr-2"
+                    style={{ color: "transparent" }}
+                  />
+                </div>
+              </div>
+              <div className="md:my-0 my-8">
+                <Image
+                  src={frame1}
+                  // width={50}
+                  // height={20}
+                  alt="Picture of Logo"
+                />
+                <h1 className="font-bold text-[1.5rem] leading-[0.75rem] text-white mb-3 uppercase lg:mt-10 max-sm:mt-16 mt-8">
+                  LOREM IPSUM DOLOR SIT
+                </h1>
+                <p className="leading-8 text-[#FFFFFF] opacity-70">
+                  Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                  accusantium doloremque laudantium, totam rem aperiam, eaque
+                  ipsa quae ab illo inventore veritatis et quasi architecto
+                  beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem
+                  quia voluptas sit aspernatur aut odit aut fugit.
+                </p>
+                <div className="mt-5">
+                  <Image
+                    src={icon2}
+                    loading="lazy"
+                    decoding="async"
+                    data-nimg="1"
+                    width={20}
+                    height={20}
+                    alt="Picture of Logo"
+                    className="mr-2"
+                    style={{ color: "transparent" }}
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        {/* <--------------Second Part-----------> */}
+        <section className="text-white pt-10 ">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:gap-8 mt-10">
+            <div className="md:my-0 my-8">
+              <h1 className="font-bold text-[1.5rem] leading-[0.75rem] mb-3 uppercase">
+                Lorem ipsum
+              </h1>
+              <p className="leading-8 text-[#FFFFFF] opacity-70">
+                Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
+                quae ab illo inventore veritatis et quasi architecto beatae
+                vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia
+                voluptas sit aspernatur aut odit aut fugit.
+              </p>
+              <div className="mt-5">
+                <Image
+                  src={icon3}
+                  loading="lazy"
+                  decoding="async"
+                  data-nimg="1"
+                  width={20}
+                  height={20}
+                  alt="Picture of Logo"
+                  className="mr-2"
+                  style={{ color: "transparent" }}
+                />
+              </div>
+            </div>
+
+            <div className="md:my-0 my-8">
+              <h1 className="font-bold text-[1.5rem] leading-[0.75rem] mb-3 uppercase">
+                dolor sit amet
+              </h1>
+              <p className="leading-8 text-[#FFFFFF] opacity-70">
+                Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
+                quae ab illo inventore veritatis et quasi architecto beatae
+                vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia
+                voluptas sit aspernatur aut odit aut fugit.
+              </p>
+              <div className="mt-5">
+                <Image
+                  src={icon4}
+                  loading="lazy"
+                  decoding="async"
+                  data-nimg="1"
+                  width={20}
+                  height={20}
+                  alt="Picture of Logo"
+                  className="mr-2"
+                  style={{ color: "transparent" }}
+                />
+              </div>
+            </div>
+            <div></div>
+          </div>
+        </section>
+
+        <section className="text-white pt-10 ">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:gap-8 mt-10">
+            <div></div>
+
+            <div className="md:my-0 my-8">
+              <Image
+                src={frame2}
+                loading="lazy"
+                decoding="async"
+                data-nimg="1"
+                width={410}
+                height={411}
+                alt="Picture of Logo"
+                className="mr-2"
+                style={{ color: "transparent" }}
+              />
+            </div>
+
+            <div className="md:my-0 my-8">
+              <h1 className="font-bold text-[1.5rem] leading-[0.75rem] mb-3 uppercase">
+                LOREM IPSUM DOLOR
+              </h1>
+              <p className="leading-8 text-[#FFFFFF] opacity-70">
+                Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
+                quae ab illo inventore veritatis et quasi architecto beatae
+                vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia
+                voluptas sit aspernatur aut odit aut fugit.
+              </p>
+              <div className="mt-5">
+                <Image
+                  src={icon5}
+                  loading="lazy"
+                  decoding="async"
+                  data-nimg="1"
+                  width={20}
+                  height={20}
+                  alt="Picture of Logo"
+                  className="mr-2"
+                  style={{ color: "transparent" }}
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/*<-----------------About Us--------------->*/}
+        <section className="lg:mt-[20rem] py-10 mb-10 lg:block md:hidden sm:hidden max-sm:hidden relative backgroundContainer cursor-pointer">
+          <div className="grid grid-cols-1 md:grid-cols-2 transition-all h-[25rem] items-center">
+            <div className="relative h-[25rem]">
+              <h1 className="mb-4 font-bold tracking-tight leading-none text-[7.5rem] text-white uppercase">
+                About <br /> Us
+              </h1>
+              <div className="absolute top-[6.5rem] left-[13rem] w-[300px] h-[300px] hover:hidden backgroundRectangleImage">
+                <Image
+                  src={frame3}
+                  loading="lazy"
+                  decoding="async"
+                  data-nimg="fill"
+                  alt="round-image"
+                  className="absolute left-0 top-0 right-0 buttom-0  h-full w-full bg-cover text-transparent rounded-full"
+                />
+              </div>
+            </div>
+            <p className="leading-8 text-[#FFFFFF] opacity-70">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+          </div>
+        </section>
+      </section>
+
+      <SlideText title="LOREM IPSUM &nbsp; LOREM IPSUM &nbsp; LOREM IPSUM  &nbsp; LOREM IPSUM &nbsp; LOREM IPSUM  &nbsp; LOREM IPSUM &nbsp;  LOREM IPSUM  &nbsp; LOREM IPSUM &nbsp; LOREM IPSUM &nbsp; LOREM IPSUM &nbsp; LOREM IPSUM &nbsp; LOREM IPSUM &nbsp; LOREM IPSUM  &nbsp; LOREM IPSUM &nbsp; LOREM IPSUM &nbsp; LOREM IPSUM &nbsp; LOREM IPSUM &nbsp; LOREM IPSUM &nbsp; LOREM IPSUM" />
+
+      {/* Dolor Set Start here */}
+      <section className="container mx-auto max-w-[1237px] px-5 pt-16">
+        <div className="container mx-auto max-w-[1237px] pt-16">
+          <h1 className="lg:mb-24 sm:mb-5 text-4xl font-bold text-white md:text-5xl lg:text-8xl dark:text-white uppercase md:w-9/12 xs:w-full">
+            lorem ipsum dolor set
+          </h1>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:gap-8 mt-10">
+            <div className="md:my-0 my-8">
+              <h1 className="font-bold text-[1.5rem] leading-[0.75rem] text-white mb-3 uppercase">
+                Lorem ipsum dolor
+              </h1>
+              <p className="leading-8 text-[#FFFFFF] opacity-70">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                sunt in culpa qui officia deserunt mollit anim id est laborum.
+              </p>
+              <div className="mt-5">
+                <Image
+                  src={icon6}
+                  loading="lazy"
+                  decoding="async"
+                  data-nimg="1"
+                  width={20}
+                  height={20}
+                  alt="Picture of Logo"
+                  className="mr-2"
+                  style={{ color: "transparent" }}
+                />
+              </div>
+            </div>
+            <div className="md:my-0 my-8">
+              <h1 className="font-bold text-[1.5rem] leading-[0.75rem] text-white mb-3 uppercase">
+                Ldolor sit amet
+              </h1>
+              <p className="leading-8 text-[#FFFFFF] opacity-70">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                sunt in culpa qui officia deserunt mollit anim id est laborum.
+              </p>
+              <div className="mt-5">
+                <Image
+                  src={icon7}
+                  loading="lazy"
+                  decoding="async"
+                  data-nimg="1"
+                  width={20}
+                  height={20}
+                  alt="Picture of Logo"
+                  className="mr-2"
+                  style={{ color: "transparent" }}
+                />
+              </div>
+            </div>
+            <div></div>
+          </div>
+
+          <section className="text-white pt-10 ">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:gap-8 mt-10">
+              <div></div>
+
+              <div className="md:my-0 my-8">
+                <Image
+                  src={frame5}
+                  loading="lazy"
+                  decoding="async"
+                  data-nimg="1"
+                  width={410}
+                  height={411}
+                  alt="Picture of Logo"
+                  className="mr-2"
+                  style={{ color: "transparent" }}
+                />
+              </div>
+
+              <div className="md:my-0 my-8">
+                <h1 className="font-bold text-[1.5rem] leading-[0.75rem] mb-3 uppercase">
+                  Lorem ipsum
+                </h1>
+                <p className="leading-8 text-[#FFFFFF] opacity-70">
+                  Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                  accusantium doloremque laudantium, totam rem aperiam, eaque
+                  ipsa quae ab illo inventore veritatis et quasi architecto
+                  beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem
+                  quia voluptas sit aspernatur aut odit aut fugit.
+                </p>
+                <div className="mt-5">
+                  <Image
+                    src={icon8}
+                    loading="lazy"
+                    decoding="async"
+                    data-nimg="1"
+                    width={20}
+                    height={20}
+                    alt="Picture of Logo"
+                    className="mr-2"
+                    style={{ color: "transparent" }}
+                  />
+                </div>
+              </div>
+            </div>
+          </section>
         </div>
-      </div>
 
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Explore the Next.js 13 playground.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
+        <div className="pt-20 lg:mt-[15rem] md:mt-[5rem]">
+             <h1 className="text-4xl max-sm:mb-16 font-extrabold tracking-wider leading-none md:text-5xl lg:text-[5.9rem] text-white uppercase">lorem ipsum dolor</h1>
+        </div>
+      </section>
     </main>
-  )
+
+
+   <footer className="lg:mt-[4rem] lg:pb-[17rem]">
+      <Accordion />
+   </footer>
+   </>
+  );
 }
