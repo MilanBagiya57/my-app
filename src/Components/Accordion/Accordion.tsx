@@ -43,7 +43,7 @@ const Accordion = () => {
               </div>
               {id === index && open && (
                 <div className="container mx-auto max-w-[1237px] px-5">
-                  <p className="flex justify-around max-w-[77rem] leading-7 mt-5 text-[#a1a1a1]">
+                  <p className="flex justify-around max-w-[77rem] leading-7 mt-5 text-[#a1a1a1] text-white p">
                     {item.ans}
                   </p>
                 </div>
