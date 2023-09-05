@@ -1,15 +1,10 @@
-"use client";
-import React from "react";
-import Marquee from "react-fast-marquee";
-import Frame4 from "../../../public/Assets/Images/Frame4.png";
-import Image from "next/image";
+'use client';
+import Marquee from 'react-fast-marquee';
 
 const SlideText = ({ title }: { title: string }) => {
   return (
     <>
-      <section 
-      className="flex  text-white"
-      >
+      <section className="flex  text-white">
         <div className="Slider-text-wraper">
           <Marquee>{title}</Marquee>
         </div>

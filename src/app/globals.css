@@ -17,11 +17,11 @@
 }
 
 body {
-  background: rgba(0, 0, 0, 1)
+  background: rgba(0, 0, 0, 1);
 }
 
-.Slider-text-wraper{
-background-image: url("../../public/Assets/Images/Frame4.png");
-padding-top: 10px;
-padding-bottom: 10px;
+.Slider-text-wraper {
+  background-image: url('../../public/Frame4.png');
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
